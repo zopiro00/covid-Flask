@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="static/style.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Usuarios Covid</title>
+</head>
+<body>
+    <h1>Alta de Inciencia Diaria Covid</h1>
+    <!--Esto es un comentario-->
+    <p>
+        Formulario de alta de incidencias
+    </p>
+    <p>
+        Aquí podrás introducir nuevos datos sobre incidencias relacionadas con el covid.
+    </p>
+    <!--form action="/provincias" method="get">
+        <input type="radio" name="tv" id=""> TV
+        <input  type="radio" name="tv" id=""> Radio
+        <br/>
+        <input type="checkbox" name="latv" id=""> Tele
+        <input type="checkbox" name="laradio" id=""> La Radio
+        <button type="submit">Enviar</button>
+    </form-->
+    <br/>
+    <form action="/incidenciasdiarias" method="post">
+        <div>
+                <div>
+                <p>Provincia</p>
+                <select required name="provincia" class="form-control" value={{}}>
+                    <option value="">Elige Provincia</option>
+                    <option value="VI">Álava/Araba</option>
+                    <option value="AB">Albacete</option>
+                    <option value="A">Alicante</option>
+                    <option value="AL">Almería</option>
+                    <option value="O">Asturias</option>
+                    <option value="AV">Ávila</option>
+                    <option value="BA">Badajoz</option>
+                    <option value="PM">Baleares</option>
+                    <option value="B">Barcelona</option>
+                    <option value="BU">Burgos</option>
+                    <option value="CC">Cáceres</option>
+                    <option value="CA">Cádiz</option>
+                    <option value="S">Cantabria</option>
+                    <option value="CS">Castellón</option>
+                    <option value="CE">Ceuta</option>
+                    <option value="CR">Ciudad Real</option>
+                    <option value="CO">Córdoba</option>
+                    <option value="CU">Cuenca</option>
+                    <option value="GI">Gerona/Girona</option>
+                    <option value="GR">Granada</option>
+                    <option value="GU">Guadalajara</option>
+                    <option value="SS">Guipúzcoa/Gipuzkoa</option>
+                    <option value="H">Huelva</option>
+                    <option value="HU">Huesca</option>
+                    <option value="J">Jaén</option>
+                    <option value="C">La Coruña/A Coruña</option>
+                    <option value="LO">La Rioja</option>
+                    <option value="GC">Las Palmas</option>
+                    <option value="LE">León</option>
+                    <option value="L">Lérida/Lleida</option>
+                    <option value="LU">Lugo</option>
+                    <option value="M">Madrid</option>
+                    <option value="MA">Málaga</option>
+                    <option value="ME">Melilla</option>
+                    <option value="MU">Murcia</option>
+                    <option value="NA">Navarra</option>
+                    <option value="O">Orense/Ourense</option>
+                    <option value="P">Palencia</option>
+                    <option value="PO">Pontevedra</option>
+                    <option value="SA">Salamanca</option>
+                    <option value="SG">Segovia</option>
+                    <option value="SE">Sevilla</option>
+                    <option value="SO">Soria</option>
+                    <option value="T">Tarragona</option>
+                    <option value="TF">Tenerife</option>
+                    <option value="TE">Teruel</option>
+                    <option value="TO">Toledo</option>
+                    <option value="V">Valencia</option>
+                    <option value="VA">Valladolid</option>
+                    <option value="BI">Vizcaya/Bizkaia</option>
+                    <option value="ZA">Zamora</option>
+                    <option value="Z">Zaragoza</option>
+                </select>
+                </div>
+                <div>
+                <p>Fecha</p>
+                <input type="date" name="fecha" required>
+            </div>
+            <div>
+                <p>Nº de Casos Totales</p>
+                <input type="number" name="num_casos" placeholder="Escribe nº casos" required value={{}}>
+            </div>
+            <div>
+                <p>nº casos. PCR</p>
+                <input type="number" name="num_casos_prueba_pcr" placeholder="Escribe nº pcr" required value={{}}>
+            </div>
+            <div>
+                <p>nº de casos. Test AC</p>
+                <input type="number" name="num_casos_prueba_test_ac" placeholder="Escribe la provincia" required value={{}}>
+            </div>
+            <div>
+                <p>nº de casos. Prueba Ag</p>
+                <input type="number" name="num_casos_prueba_ag" placeholder="nº pruebas AG" required value={{}}>
+            </div>
+            <div>
+                <p>nº de casos. Prueba Elisa</p>
+                <input type="number" name="num_casos_prueba_elisa" placeholder="Nº pruebas Elisa" required value={{}}>
+            </div>
+            <div>
+                <p>nº de casos. Otros</p>
+                <input type="number" name="num_casos_prueba_desconocida" placeholder="Nº pruebas desconocidas" required value={{}}>
+            </div>
+            <div>
+                <br>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
